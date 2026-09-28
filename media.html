@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Đa phương tiện - Blakletterpress</title>
+	
+	<!-- Liên kết tới file CSS của template (Hãy đảm bảo đường dẫn css/style.css là chính xác theo thư mục của bạn) -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+	<style>
+		/* CSS bổ sung để định dạng các thẻ semantic đa phương tiện */
+		.media-article section { margin-bottom: 30px; }
+		.media-article h1 { margin-bottom: 5px; }
+		.media-article h3 { text-align: center; margin-bottom: 15px; font-size: 18px; color: #222; }
+		.media-article .meta-info { font-size: 0.9em; color: #555; margin-bottom: 20px; font-style: italic; }
+		.media-article figure { margin: 0; text-align: left; }
+		.media-article figure img { width: 100%; max-width: 100%; border: 1px solid #ccc; box-sizing: border-box; }
+		.media-article figcaption { font-size: 0.85em; color: #333; margin-top: 8px; font-weight: bold; }
+		.media-article video, .media-article audio, .media-article iframe { width: 100%; border: none; box-sizing: border-box; }
+		.media-article p { line-height: 1.6; margin-bottom: 15px; }
+		.media-article .tags { font-size: 0.9em; color: #666; border-top: 1px solid #ccc; padding-top: 10px; }
+		.media-article .tags a { color: #666; text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="motto">
+				<a href="index.html" class="sitename"><img src="images/blakletterpress.png" height="24" width="142" alt="SiteName"></a>
+				<p>
+					<img src="images/header-text.png" height="14" width="218" alt="Text">
+				</p>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO"></a>
+			</div>
+			<div id="searchbar">
+				<form action="#" method="post">
+					<input type="text" value="Enter search query" class="txtfield" onblur="javascript:if(this.value==''){this.value=this.defaultValue;}" onfocus="javascript:if(this.value==this.defaultValue){this.value='';}">
+					<input type="submit" value="Search" class="btn">
+				</form>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="main">
+				<div class="body">
+					<!-- BẮT ĐẦU PHẦN NỘI DUNG ĐA PHƯƠNG TIỆN -->
+					<article class="media-article">
+						<header>
+							<h1>Ngày hội Công nghệ Xanh 2026</h1>
+							<p class="meta-info">
+								<time datetime="2026-04-22">22/04/2026</time> - Tác giả: <a href="#">Ban tổ chức Blakletterpress</a>
+							</p>
+						</header>
+
+						<section>
+							<!-- Thẻ <figure> và <figcaption> cho hình ảnh có chú thích -->
+							<figure>
+								<!-- BẠN CẦN THÊM ẢNH meeting.jpg VÀO THƯ MỤC images -->
+								<img src="images/meeting.jpg" alt="Hội trường chính">
+								<figcaption>Hội trường chính trong ngày khai mạc sự kiện năm 2025.</figcaption>
+							</figure>
+						</section>
+
+						<section>
+							<h3>Giới thiệu sự kiện</h3>
+							<p>Ngày hội Công nghệ Xanh 2026 quy tụ các chuyên gia và doanh nghiệp theo đuổi giải pháp công nghệ bền vững. Sự kiện gồm chuỗi tọa đàm, khu trưng bày sản phẩm và các buổi kết nối dành cho sinh viên.</p>
+						</section>
+
+						<section>
+							<h3>Video giới thiệu</h3>
+							<!-- Thẻ <video> tích hợp ảnh bìa (poster) -->
+							<!-- BẠN CẦN TẠO THƯ MỤC 'video' VÀ THÊM FILE gioi-thieu.mp4 VÀO ĐÓ -->
+							<video controls poster="images/team-large.jpg">
+								<source src="video/gioi-thieu.mp4" type="video/mp4">
+								Trình duyệt của bạn không hỗ trợ thẻ video.
+							</video>
+						</section>
+
+						<section>
+							<h3>Podcast: Trò chuyện cùng diễn giả</h3>
+							<p>Nghe lại buổi phỏng vấn khách mời chính của chương trình:</p>
+							<!-- Thẻ <audio> cho tệp âm thanh -->
+							<!-- BẠN CẦN TẠO THƯ MỤC 'audio' VÀ THÊM FILE podcast.mp3 VÀO ĐÓ -->
+							<audio controls>
+								<source src="audio/podcast.mp3" type="audio/mpeg">
+								Trình duyệt của bạn không hỗ trợ thẻ audio.
+							</audio>
+						</section>
+
+						<section>
+							<h3>Địa điểm tổ chức</h3>
+							<p>Sự kiện diễn ra tại Hà Nội. Xem bản đồ đường đi bên dưới:</p>
+							<!-- Thẻ <iframe> dùng để nhúng bản đồ Google Maps -->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709420005!2d105.77034002621021!3d21.003217088219412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1727447473858!5m2!1svi!2s" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</section>
+
+						<section>
+							<h3>Hình ảnh các mùa trước</h3>
+							<figure>
+								<!-- BẠN CẦN THÊM ẢNH ecofriends.jpg VÀO THƯ MỤC images -->
+								<img src="images/ecofriends.jpg" alt="Khu trưng bày sản phẩm xanh">
+								<figcaption>Khu trưng bày sản phẩm xanh mùa 2025.</figcaption>
+							</figure>
+						</section>
+						
+						<footer>
+							<p class="tags">Chủ đề: <a href="#">công nghệ xanh</a>, <a href="#">phát triển bền vững</a></p>
+						</footer>
+					</article>
+					<!-- KẾT THÚC PHẦN NỘI DUNG ĐA PHƯƠNG TIỆN -->
+				</div>
+			</div>
+			<div id="sidebar">
+				<div id="navigation">
+					<div>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="new_index.html">New Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="blog.html">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="section">
+					<div id="connect">
+						<h2>Connect with us:</h2>
+						<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> 
+						<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> 
+						<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+					</div>
+				</div>
+				<div class="section">
+					<div id="posts">
+						<h2>Placeholder</h2>
+						<ul>
+							<li>
+								<h5>Title Sample One</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+							<li>
+								<h5>Title Sample One</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
+								<a href="news.html" class="more">Read more</a>
+							</li>
+						</ul>
+						<a href="news.html" class="btn2">View More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				<ul id="featured">
+					<li>
+						<a href="index.html" class="home"></a>
+						<p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+					</li>
+					<li>
+						<a href="index.html" class="bell"></a>
+						<p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+					</li>
+					<li>
+						<a href="index.html" class="globe"></a>
+						<p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+					</li>
+					<li>
+						<a href="index.html" class="pencil"></a>
+						<p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+					</li>
+				</ul>
+				<p id="footnote">© Copyright © 2011.Company name all rights reserved</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
